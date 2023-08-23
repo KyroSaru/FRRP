@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bahama Mamas</title>
+    <link rel="shortcut icon" href="resources/logo_bahamas.png" />
+</head>
+<body>
+    <header>
+        <h1 class="nom">Bahamas</h1>
+        <img src="resources/logo_bahamas.png" alt="Logo Bahama Mamas" class="logo"> 
+        <nav class="navbar">
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#soiree">Soirée</a></li>
+                    <li><a href="#candidature">Candidature</a></li>
+                    <li><a href="#presentation">Notre équipe</a></li>
+                    <li><a href="#carte">Carte des Consommations</a></li>
+                </ul>
+            </div>
+            <img src="menu-btn.png" alt="Bouton Menu" class="menu-h">
+        </nav>
+    </header>
+
+    <section id="accueil" class="section">
+        <div class="accueil-content">
+            <h2>Bienvenue au Bahamas</h2>
+            <p>Plongez dans l'univers captivant des années 80, où les néons dansent au rythme de la musique et les souvenirs se mêlent à l'ambiance électrique. Notre boîte de nuit vous offre une expérience rétro "Synth Wave" unique en son genre.</p>
+            <p>Rejoignez-nous pour des soirées inoubliables, des cocktails délicieux et des beats vibrants qui vous feront voyager dans le temps. Que vous soyez passionné de rétro ou simplement en quête de nouvelles sensations, le Bahamas est l'endroit où les souvenirs et la modernité fusionnent.</p>
+            <a href="#soiree" class="cta-button">Découvrez plus</a>
+        </div>
+    </section>
+
+    <section id="soiree" class="section">
+        <div class="soiree-content">
+            <h2>Nos soirées</h2>
+            <p>Une soirée est prévue ce 22 août à minuit dans une villa à Vinewood Hills !</p>
+            <p>Si vous voulez profiter d'une superbe soirée en notre comapgnie, nous vous attendons nombreux.</p>
+            <div class="soiree-image">
+                <div class="emp">
+                    <h3>Emplacement :</h3>
+                    <img src="resources/party_place.png" alt="Emplacement de la soirée du 21/08" title="Emplacement de la soirée du 21/08" class="emplacement">
+                </div>
+                <div class="photo">
+                    <h3>Villa :</h3>
+                    <img src="resources/villa_pic.png" alt="Photo villa de la soirée du 21/08" title="Photo villa de la soirée du 21/08" class="photo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="candidature" class="section">
+        <div class="candidature-content">
+            <h2>Rejoignez Notre Équipe</h2>
+            <p>
+                Nous sommes toujours à la recherche de talents passionnés pour enrichir notre équipe. 
+                <br/>Si vous êtes enthousiaste à l'idée de travailler avec nous, veuillez remplir le formulaire de candidature ci-dessous :
+            </p>
+            <a href="https://bit.ly/frrpbahamas" class="cta-button">Formulaire de Candidature</a>
+        </div>
+    </section>
+
+    <section id="presentation" class="section">
+        <div class="presentation-content">
+            <h2>Rencontrez Notre Équipe</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="resources/moussa.png" alt="Moussa Soukous" class="team-image">
+                    <h3>Moussa Soukous</h3>
+                    <p>PDG</p>
+                </div>
+                <div class="team-member">
+                    <img src="bryan_duval.jpg" alt="Bryan Duval" class="team-image">
+                    <h3>Bryan Duval</h3>
+                    <p>PDG</p>
+                </div>
+                <div class="team-member">
+                    <img src="resources/zack.png" alt="Zack" class="team-image">
+                    <h3>Zack</h3>
+                    <p>Chef de la Sécurité</p>
+                </div>
+                <div class="team-member">
+                    <img src="resources/walid.png" alt="Walid" class="team-image">
+                    <h3>Walid</h3>
+                    <p>DJ</p>
+                </div>
+                <div class="team-member">
+                    <img src="aziz_logitech.jpg" alt="Aziz Logitech" class="team-image">
+                    <h3>Aziz Logitech</h3>
+                    <p>Barman</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carte" class="section">
+        <div class="carte-content">
+            <h2>Carte des Consommations</h2>
+            <p>Découvrez notre sélection de boissons rafraîchissantes et de cocktails uniques :</p>
+            <div class="carte-image">
+                <img src="resources/conso_menu.png" alt="Carte des Consommations">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Moussa Corp.</p>
+        <p>&copy; 2023 Bahama Mamas. Tous droits réservés.</p>
+    </footer>
+
+    <video autoplay muted loop id="video-background">
+        <source src="resources/animated_background.mp4" type="video/mp4">
+        Votre navigateur ne prend pas en charge la lecture de vidéos.
+    </video>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-h")
+        const navLinks = document.querySelector(".nav-links")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
+</html>
