@@ -22,6 +22,10 @@ Ce dépôt a pour but de fix les images, corriger les erreurs et ajouter correct
 
 J'ai fais ce dépôt sans avoir votre code et votre BDD au préalable donc il y aura sûrement quelques changements à faire.
 
+N'oubliez pas d'ajouter le contenu des fichiers `basicneeds-server-bkitems.lua` & `basicneeds-locales-bkitems.lua` dans votre `esx_basicneeds`.
+- `basicneeds-server-bkitems.lua` dans le fichier `main.lua` côté `server`.
+- `basicneeds-locales-bkitems.lua` dans le fichier `fr.lua` côté `locales`.
+
 
 ## Contact
 
